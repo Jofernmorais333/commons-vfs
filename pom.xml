@@ -83,14 +83,14 @@
     <commons.release.desc>(requires Java 8 or above)</commons.release.desc>
     <commons.release.isDistModule>false</commons.release.isDistModule>
     <!-- make sure bundle plugin has dependency informations for 'optional' -->
-    <commons.osgi.excludeDependencies />
+    <commons.osgi.excludeDependencies/>
     <commons.osgi.import>
         *
     </commons.osgi.import>
     <!-- Avoid warnings about being unable to find jars during site building -->
     <dependency.locations.enabled>false</dependency.locations.enabled>
     <hadoop.version>3.4.2</hadoop.version>
-    <httpcore5.version>5.3.6</httpcore5.version>
+    <httpcore5.version>5.4</httpcore5.version>
     <httpclient5.version>5.5.1</httpclient5.version>
     <jackrabbit1.version>1.6.5</jackrabbit1.version>
     <!-- Don't use jackrabbit2 2.21.x, it's labeled "unstable". -->
@@ -208,8 +208,8 @@
             </goals>
             <configuration>
               <target>
-                <mkdir dir="${project.build.directory}/osgi" />
-                <touch file="${project.build.directory}/osgi/MANIFEST.MF" />
+                <mkdir dir="${project.build.directory}/osgi"/>
+                <touch file="${project.build.directory}/osgi/MANIFEST.MF"/>
               </target>
             </configuration>
           </execution>
@@ -223,8 +223,8 @@
               <target>
                 <copy todir="${project.build.directory}/apidocs/META-INF">
                   <fileset dir="${commons.parent.dir}">
-                    <include name="LICENSE.txt" />
-                    <include name="NOTICE.txt" />
+                    <include name="LICENSE.txt"/>
+                    <include name="NOTICE.txt"/>
                   </fileset>
                 </copy>
               </target>
@@ -668,7 +668,7 @@
       <name>Adam Murdoch</name>
       <id>adammurdoch</id>
       <email>adammurdoch -at- apache.org</email>
-      <organization />
+      <organization/>
     </developer>
     <developer>
       <name>James Strachan</name>
